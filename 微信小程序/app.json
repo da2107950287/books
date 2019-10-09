@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/booklist/booklist",
+    "pages/search/search",
+    "pages/user/user",
+
+    "pages/bookinfo/bookinfo",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "有书共读",
+    "navigationBarTextStyle": "black"
+ 
+  },
+  "sitemapLocation": "sitemap.json"
+}

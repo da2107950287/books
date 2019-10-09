@@ -1,0 +1,147 @@
+.continer {
+  width: 750rpx;
+}
+
+.header {
+  height: 44px;
+  line-height: 44px;
+  overflow: hidden;
+  background-color: #fbfbfb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 153px;
+}
+
+.header-title {
+  width: 89px;
+  height: 19px;
+  line-height: 19px;
+  color: #595959;
+}
+
+.topr {
+  float: right;
+}
+
+.search {
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+.more {
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.more-block {
+  position: absolute;
+  top: 44px;
+  left: 0;
+  width: 100%;
+  height: 168px;
+  padding: 8px 20px 18px;
+  box-sizing: border-box;
+  background-color: #fbfbfb;
+  z-index: 100;
+}
+
+.more-icon {
+  display: inline-block;
+  width: 33.3%;
+  padding: 12px 0;
+  text-align: center;
+}
+
+.moreimg {
+  width: 28px;
+  height: 28px;
+}
+.moretext{
+      font-size: 12px;
+    height: 12px;
+    line-height: 12px;
+    padding-top: 4px;
+    color: #333;
+}
+
+.person-info {
+  padding-top: 16px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.iconhead-box {
+  text-align: center;
+}
+
+.iconhead {
+  width: 83px;
+  height: 83px;
+  border-radius: 50%;
+}
+
+.user-detail {
+  padding-top: 24px;
+  padding-bottom: 32px;
+  position: relative;
+}
+
+.notice-login {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 35px;
+  text-decoration: none;
+}
+
+text {
+  color: #f74c53;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.login-btn {
+  border-right: 1px solid #f74d54;
+}
+
+.blank {
+  height: 10px;
+  background-color: #f5f5f5;
+}
+
+.download {
+  padding-top: 90px;
+  padding-bottom: 188px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ddlogo {
+  width: 70px;
+  height: 70px;
+
+}
+
+.dang-slogn {
+  margin-top: 12px;
+  margin-bottom: 22px;
+  color: #868686;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+
+}
+
+.download-btn {
+  color: #f74c53;
+  font-size: 16px;
+  border: 1px solid #f74d54;
+  border-radius: 4px;
+  text-align: center;
+  padding: 9px;
+}

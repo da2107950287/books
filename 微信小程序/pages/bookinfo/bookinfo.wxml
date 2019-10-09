@@ -1,0 +1,72 @@
+<view class="continer">
+  <view class="header">
+    <!-- <image src="/image/back.png" class="back"></image> -->
+    <view class="bookinfo-title">书籍详情</view>
+    <view class="topr">
+      <image src="/image/search.png" class="search" bindtap="search"></image>
+      <image src="/image/more.png" class="more"></image>
+    </view>
+  </view>
+  <view class="bookinfo-head">
+    <view class="bookimg">
+      <image src="{{bookinfo[0].imgsrc}}" class="bookinfo-img"></image>
+      <image src="/image/xsq.png" class="xsq"></image>
+    </view>
+    <view class="bookinfo">
+      <view class="title-block">
+        <view class="book-title">{{bookinfo[0].title}}
+          <image src="/image/e-book.png" class="e-book"></image>
+        </view>
+
+      </view>
+      <view class="author-block">{{bookinfo[0].author}}</view>
+      <view class="price-block">
+        <view class="book-price">￥{{bookinfo[0].price}}</view>
+        <view class="book-oprice">原价￥{{bookinfo[0].price}}</view>
+      </view>
+      <image src="/image/icon-vip.png" class="icon-vip"></image>
+    </view>
+
+  </view>
+  <view class="btn-group">
+    <view class="common-btn">
+      <image src="/image/comment.png" class="common-img"></image>
+      <view class="common-content">评论</view>
+    </view>
+    <view class="common-btn">
+      <image src="/image/collect.png" class="common-img"></image>
+      <view class="common-content">评论</view>
+    </view>
+    <view class="common-btn">
+      <image src="/image/share.png" class="common-img"></image>
+      <view class="common-content">评论</view>
+    </view>
+
+  </view>
+  <view class="blank"></view>
+  <image src="/image/banner.png" class="banner"></image>
+  <view class="qg-block">
+    <view class="xsqg">限时抢</view>
+    <view class="djs">此商品限时抢购中，剩余</view>
+  </view>
+  <view class="ck">
+    <view>查看对应纸书</view>
+    <view>￥</view>
+  </view>
+  <view class="blank"></view>
+  <view class="info-nav">
+    <view class="common-info-btn active">详情</view>
+    <view class="common-info-btn">详情</view>
+    <view class="common-info-btn">详情</view>
+  </view>
+  <view class="blank"></view>
+  <view class="info-content">
+    <text class="nrjj">内容简介</text>
+    <rich-text nodes="{{bookinfo[0].contentv}}" class="{{packup}}"></rich-text>
+     <view class="pack-up" bindtap="packUp">
+    <text>{{content}}</text>
+   <image src="{{img}}" class="btn-arrow"></image>
+  </view>
+  </view>
+ 
+</view>

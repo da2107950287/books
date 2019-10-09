@@ -1,0 +1,55 @@
+<view class="continer">
+  <view class="header">
+    <!-- <image src="/image/back.png" class="back"></image> -->
+    <view class="header-title">个人中心</view>
+    <view class="topr">
+      <image src="/image/search.png" class="search" bindtap="search"></image>
+      <image src="/image/more.png" class="more" bindtap="more"></image>
+    </view>
+  </view>
+   <view class="more-block" style="display:{{display}}">
+    <navigator url="../booklist/booklist" class="more-icon">
+      <image src="/image/index.png" class="moreimg"></image>
+      <view class="moretext">首页</view>
+    </navigator>
+    <navigator url="../booklist/booklist" class="more-icon">
+      <image src="/image/bookshelf.png" class="moreimg"></image>
+      <view class="moretext">书房</view>
+    </navigator>
+    <navigator url="../user/user" class="more-icon">
+      <image src="/image/account.png" class="moreimg"></image>
+      <view class="moretext">账户</view>
+    </navigator>
+    <navigator url="../booklist/booklist" class="more-icon">
+      <image src="/image/car.png" class="moreimg"></image>
+      <view class="moretext">购物车</view>
+    </navigator>
+     <navigator url="../booklist/booklist" class="more-icon">
+      <image src="/image/icon_share.png" class="moreimg"></image>
+      <view class="moretext">分享</view>
+    </navigator>
+    <navigator url="../booklist/booklist" class="more-icon">
+      <image src="/image/dangdang.png" class="moreimg"></image>
+      <view class="moretext">当当购物</view>
+    </navigator>
+
+  </view>
+  <view class="person-info">
+    <view class="iconhead-box">
+      <image src="/image/icon_head.png" class="iconhead"></image>
+    </view>
+    <view class="user-detail">
+      <view class="notice-login">
+        <text class="login-btn">登录</text>
+        <text>注册</text>
+      </view>
+    </view>
+  </view>
+  <view class="blank"></view>
+  <view class="download">
+    <image src="/image/ddlogo.png" class="ddlogo"></image>
+   <text class="dang-slogn">海量阅读，应在当当云阅读</text>
+   <text class="download-btn">下载当当云阅读客服端</text>
+  </view>
+
+</view>

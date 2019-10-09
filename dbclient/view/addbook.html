@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>后台管理系统</title>
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <!-- <link rel="stylesheet" href="../layui/css/layui.css" media="all"> -->
+</head>
+
+<body class="layui-layout-body">
+    <div class="layui-layout layui-layout-admin">
+        <div class="layui-header"></div>
+        <div class="layui-side layui-bg-black"></div>
+        <div class="layui-body">
+            <div style="padding: 15px;">
+                <span class="layui-breadcrumb">
+                    <a href="">首页</a>
+                    <a><cite>分类添加</cite></a>
+                    <a href="">分类管理</a>
+
+                </span>
+                <hr>
+                <form class="layui-form" action="">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">书名</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="title" required lay-verify="required" placeholder="请输入书名"
+                                autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">作者</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="author" required lay-verify="required" placeholder="请输入作者"
+                                autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">系列</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="series" required lay-verify="required" placeholder="请输入系列"
+                                    autocomplete="off" class="layui-input">
+                            </div>
+
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">书号</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="isbn" required lay-verify="required" placeholder="请输入书号"
+                                    autocomplete="off" class="layui-input">
+                            </div>
+
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">价格</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="price" required lay-verify="required" placeholder="请输入价格"
+                                    autocomplete="off" class="layui-input">
+                            </div>
+
+                        </div>
+
+
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">出版社</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="press" required lay-verify="required" placeholder="请输入出版社"
+                                    autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">出版时间</label>
+                            <div class="layui-input-inline">
+                                <input type="text" name="pdata" required lay-verify="required" placeholder="请输入出版时间"
+                                    autocomplete="off" class="layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">封面照片</label>
+                            <div class="layui-input-inline">
+                                <button type="button" class="layui-btn" id="imgs">
+                                    <i class="layui-icon">&#xe67c;</i>上传图片
+                                </button>
+                                <img src="" alt="" srcset="" id="imgshow">
+
+                            </div>
+
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">内容简介</label>
+                            <div class="layui-input-inline">
+                                <div id="editor1" style="width: 800px">
+                                </div>
+                                <textarea id="text1" style="width:800px; height:200px;display: none"></textarea>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">作者简介</label>
+                            <div class="layui-input-inline">
+                                <div id="editor2" style="width: 800px">
+                                </div>
+                                <textarea id="text2" style="width:800px; height:200px;display: none"></textarea>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-input-block">
+                                <button class="layui-btn" lay-submit lay-filter="addbook">添加</button>
+                            </div>
+                        </div>
+                </form>
+
+            </div>
+        </div>
+        <div class="layui-footer">
+        </div>
+    </div>
+   
+    <script src="../layui/layui.all.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/book.js"></script>
+    <script src="https://unpkg.com/wangeditor@3.1.1/release/wangEditor.min.js"></script>
+    <script>
+        var upload = layui.upload; //得到 upload 对象
+
+        //创建一个上传组件
+        upload.render({
+            elem: '#imgs'
+            , url: 'http://localhost:8080/upload/'
+            , accept: 'images'
+            , field: 'avatar'//设定文件域的字段名
+            , done: function (res, index, upload) { //上传后的回调
+                console.log(res)
+                console.log(res.data.src)
+                document.querySelector('#imgshow').style.display = 'block';
+                document.querySelector('#imgshow').src = res.data.src;
+
+            }
+
+        })
+    </script>
+
+    <script type="text/javascript">
+        var E = window.wangEditor
+        var editor1 = new E('#editor1');
+        var editor2 = new E('#editor2');
+        editor1.customConfig.onchange = function (html) {
+            // 监控变化，同步更新到 textarea
+            document.querySelector('#text1').value = html;
+
+        }
+        editor2.customConfig.onchange = function (html) {
+            // 监控变化，同步更新到 textarea
+            document.querySelector('#text2').value = html;
+
+        }
+        // 或者 var editor = new E( document.getElementById('editor') )
+        editor1.customConfig.uploadImgServer = 'http://localhost:8080/upload/mul'
+        editor2.customConfig.uploadImgServer = 'http://localhost:8080/upload/mul'
+        // editor.customConfig.withCredentials = true;
+        editor1.customConfig.uploadFileName = 'photos';
+        editor2.customConfig.uploadFileName = 'photos'
+        editor1.create();
+        editor2.create();
+    </script>
+
+</body>
+
+</html>

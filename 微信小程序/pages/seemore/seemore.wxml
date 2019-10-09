@@ -1,0 +1,10 @@
+<view class="container">
+  <view class="header">
+    <view class="search-block">
+      <icon></icon>
+      <input placeholder="请输入关键词"></input>
+      <icon></icon>
+    </view>
+    <view class="cancle-btn">取消</view>
+  </view>
+</view>

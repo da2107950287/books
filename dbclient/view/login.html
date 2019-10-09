@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>用户登录</title>
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <!-- <link rel="stylesheet" href="../css/reg.css"> -->
+</head>
+
+<body>
+    <!-- <div class="mydiv"> -->
+    <div class="layui-container mylayui-container">
+        <h1>用户登录</h1>
+        <hr>
+        <form class="layui-form" action="">
+            <div class="layui-form-item">
+                <label class="layui-form-label">手机号：</label>
+                <div class="layui-input-inline">
+                    <input type="text" name="tel" required lay-verify="required" placeholder="请输手机号" autocomplete="off"
+                        class="layui-input">
+                </div>
+                <div class="layui-form-mid layui-word-aux">辅助文字</div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">密码：</label>
+                <div class="layui-input-inline">
+                    <input type="password" name="passwd" required lay-verify="required" placeholder="请输入密码"
+                        autocomplete="off" class="layui-input">
+                </div>
+                <div class="layui-form-mid layui-word-aux">辅助文字</div>
+            </div>
+            <div class="layui-form-item">
+                <div class="layui-input-block">
+                    <button class="layui-btn" lay-submit lay-filter="login">登录</button>
+                    <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="../layui/layui.all.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/user.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,262 @@
+.continer {
+  width: 750rpx;
+}
+
+.header {
+  height: 44px;
+  line-height: 44px;
+  overflow: hidden;
+  background-color: #fbfbfb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 153px;
+}
+
+.back {
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+  float: left;
+  
+}
+
+.header-title {
+  width: 89px;
+  height: 19px;
+line-height: 19px;
+  color: #595959;
+}
+
+.topr {
+  float: right;
+}
+
+.search {
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+.more {
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.bookinfo-head {
+  padding: 16px 13px 0;
+  display: flex;
+}
+
+.bookimg {
+  position: relative;
+  width: 90px;
+}
+
+.bookinfo-img {
+  width: 90px;
+  height: 128px;
+  vertical-align: top;
+}
+
+.xsq {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.bookinfo {
+  padding-left: 13px;
+  /* display: inline-block; */
+}
+
+.title-block {
+  display: flex;
+  /* height: 21px; */
+  line-height: 21px;
+  font-size: 16px;
+  color: #494949;
+  align-items: center;
+}
+
+.book-title {
+  display: -webkit-box;
+  display: box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.e-book {
+  width: 32px;
+  height: 16px;
+  margin-left: 4px;
+}
+
+.author-block {
+  color: #828ba3;
+  height: 24px;
+  font-size: 12px;
+  line-height: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 2px;
+  margin-top: 5px;
+}
+
+.price-block {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-top: 5px;
+}
+
+.book-price {
+  font-size: 18px;
+  color: #ff901c;
+  vertical-align: bottom;
+}
+
+.book-oprice {
+  display: inline;
+  color: #c6c6c6;
+  font-size: 12px;
+  line-height: 12px;
+  text-decoration: line-through;
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.icon-vip {
+  width: 116px;
+  height: 18px;
+  margin-top: 5px;
+}
+
+.btn-group {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  padding: 10px 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.common-btn {
+  width: 114px;
+}
+
+.common-img {
+  width: 24px;
+  height: 24px;
+}
+
+.blank {
+  height: 8px;
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+.banner {
+  width: 100%;
+  height: 90px;
+}
+
+.qg-block {
+  margin-left: 13px;
+  height: 44px;
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+.xsqg {
+  background-color: #ffa339;
+  color: #fff;
+  line-height: 16px;
+  padding: 0 4px;
+}
+
+.djs {
+  padding-left: 6px;
+}
+
+.ck {
+  font-size: 12px;
+  margin-left: 13px;
+  display: flex;
+  height: 44px;
+  align-items: center;
+}
+
+.info-nav {
+  height: 39px;
+  display: flex;
+  font-size: 15px;
+  padding: 0 13px;
+  color: #494949;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.common-info-btn {
+  width: 84px;
+  height: 37px;
+  text-align: center;
+  line-height: 37px;
+}
+
+.active {
+  color: #ff4e4e;
+  border-bottom: 2px solid #ff4e4e;
+}
+
+.info-content {
+  padding: 10px 13px 27.5px;
+  font-size: 15px;
+  position: relative;
+}
+
+.nrjj {
+  color: #494949;
+  font-weight: 400px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.nr {
+  height: 200px;
+  line-height: 25px;
+  color: #666;
+  overflow: hidden;
+  display: -webkit-box;
+  /* display: box; */
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+.nr1{
+  height: auto;
+  line-height: 25px;
+  color: #666;
+}
+
+.pack-up {
+  position: absolute;
+  right: 13px;
+  bottom: 2px;
+  color: #666;
+  padding-left: 3px;
+}
+
+.btn-arrow {
+  width: 10px;
+  height: 5px;
+}
